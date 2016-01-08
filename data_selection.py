@@ -10,39 +10,20 @@ import time
 import urllib
 import lxml.html
 import random as rn
+import pandas as pd
 
-# result from first proper run-through
-# http://catalog.data.gov/dataset/accidents-fatalities-and-rates-1995-through-2014-for-u-s-air-carriers-operating-under-14-c-782f8
-
-
-# To prevent download dialog
-#profile = webdriver.FirefoxProfile()
-#profile.set_preference('browser.download.folderList', 2) # custom location
-#profile.set_preference('browser.download.manager.showWhenStarting', False)
-#profile.set_preference('browser.download.dir', 'C:\Users\cwal3\Desktop\Development\wwtw\state_data')
-#profile.set_preference('browser.helperApps.neverAsk.saveToDisk', 'text/csv')
-
-
-#fp = webdriver.FirefoxProfile('C:/Users/cwal3/AppData/Roaming/Mozilla/Firefox/Profiles/e8hk3z0p.default')
-#driver  = webdriver.Firefox()
-#
-#'c:\users\cwal3\appdata\local\temp\tmpqtszgd'
-#print driver.firefox_profile.path
-#
-#driver.close()
 
 connection = urllib.urlopen("http://www.data.gov/metrics")
 driver = webdriver.Firefox()
 driver.get('http://www.data.gov/metrics')
 
+df = pd.read_csv('chosen_numbers.csv')
 
-#dom =  lxml.html.fromstring(connection.read())
 i = 0
 z =  581#rn.randint(20, 608)
 
 for link in driver.find_elements_by_tag_name('a'): # select the url in href for all a tags(links)
-    #browser = webdriver.Firefox()
-    #complete_link = 'http://www.data.gov/metrics' + link
+
     print i
     print z
 
@@ -60,27 +41,8 @@ for link in driver.find_elements_by_tag_name('a'): # select the url in href for 
         if link.get_attribute('href') == 'javascript:void(0)':
             z = z+1
 
-    #time.sleep(3)
-    #print link.get_attribute('href')
-    #time.sleep(5)
-    #if i > 6:
-        
-        #page.click()
-       # urllib.urlopen(complete_link)
-      #  time.sleep(8)
-        #save_me = ActionChains(br).key_down(Keys.CONTROL)\.key_down('s').key_up(Keys.CONTROL).key_up('s')
-        #save_me.perform()
-        #response = urllib.urlopen(complete_link)
-        #with open(link, 'w') as f:
-        #    f.write(response.read())
-        
-        
-      #  time.sleep(8)
     i = i + 1
-   # print i
 
-    
-   # print link
 driver.close()
 driver.quit()
 
