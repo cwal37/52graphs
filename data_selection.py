@@ -19,8 +19,16 @@ driver.get('http://www.data.gov/metrics')
 
 df = pd.read_csv('chosen_numbers.csv')
 
+numbers = list(df['numbers'])
+week = len(numbers) - 1
+
 i = 0
-z =  581#rn.randint(20, 608)
+number_range = list(range(20,608))
+
+rand_options = [x for x in number_range if x not in numbers]
+
+z = rn.randint(rand_options)    
+
 
 for link in driver.find_elements_by_tag_name('a'): # select the url in href for all a tags(links)
 
