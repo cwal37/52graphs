@@ -59,7 +59,7 @@ pct_2010_bar = ax.bar(ind, df['pct_2010'], width, color = plt.rcParams['axes.col
 pct_2011_bar = ax.bar(ind2, df['pct_2011'], width, color = plt.rcParams['axes.color_cycle'][1])
 
 ax.set_ylabel('Percent')
-ax.set_title('Percent Response to Satisfaction Survey by State')
+ax.set_title('Percent Response to E-Verify Satisfaction Survey by State')
 ax.set_xticks(ind2)
 ax.set_xticklabels(states, rotation = 60)
 
