@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt
 import matplotlib as mpl
 from matplotlib.font_manager import FontProperties
 
+
 mpl.rcdefaults()
 mpl.rcParams['figure.figsize'] = 14, 9
 plt.style.use('ggplot')
@@ -19,10 +20,37 @@ mpl.rcParams.update({'font.size': 15})
 df = pd.read_csv('graph_2_data.csv')
 #
 
+adjectives = ['MALE', 'FEMALE', 'WHITE', 'BLACK']
 
+for x in adjectives:
+    if x != 'BLACK':
+        globals()[str(x)+"_numbers"] = list([float(np.sum(df[x+' SENIOR OFF AND MGRS'])/float((np.sum(df['1-Senior OFF AND MGRS/TOTAL'])))), 
+            float(np.sum(df[x+' PROFESSIONALS']))/float(np.sum(df['2-PROF/TOTAL'])), 
+            float(np.sum(df[x+' TECHNICIANS']))/float(np.sum(df['3-TECH/TOTAL'])), 
+            float(np.sum(df[x+' SALES WORKERS']))/float(np.sum(df['4-SALE/TOTAL'])), 
+            float(np.sum(df[x+' OFFICE AND CLERICALS']))/float(np.sum(df['5-CLERICALS/TOTAL'])), 
+            float(np.sum(df[x+' CRAFT WORKERS']))/float(np.sum(df['6-CRAFT/TOTAL'])), 
+            float(np.sum(df[x+' OPERATIVES']))/float(np.sum(df['7-OPER/TOTAL'])), 
+            float(np.sum(df[x+' LABORERS']))/float(np.sum(df['8-LABORS/TOTAL'])), 
+            float(np.sum(df[x+' SERVICE WORKERS']))/float(np.sum(df['9-Service/TOTAL'])), 
+            float(np.sum(df[x+' MID OFF AND MGRS']))/float(np.sum(df['1.2-Mid OFF AND MGRS/TOTAL']))])
+    if x == 'BLACK':
+        globals()[str(x)+"_numbers"] = list([float(np.sum(df['SENIOR '+x+' OFF AND MGRS']))/float(np.sum(df['1-Senior OFF AND MGRS/TOTAL'])), 
+            float(np.sum(df[x+' PROFESSIONALS']))/float(np.sum(df['2-PROF/TOTAL'])), 
+            float(np.sum(df[x+' TECHNICIANS']))/float(np.sum(df['3-TECH/TOTAL'])), 
+            float(np.sum(df[x+' SALES WORKERS']))/float(np.sum(df['4-SALE/TOTAL'])), 
+            float(np.sum(df[x+' OFFICE AND CLERICALS']))/float(np.sum(df['5-CLERICALS/TOTAL'])), 
+           float(np.sum(df[x+' CRAFT WORKERS']))/float(np.sum(df['6-CRAFT/TOTAL'])), 
+           float(np.sum(df[x+' OPERATIVES']))/float(np.sum(df['7-OPER/TOTAL'])), 
+           float(np.sum(df[x+' LABORERS']))/float(np.sum(df['8-LABORS/TOTAL'])), 
+            float(np.sum(df[x+' SERVICE WORKERS']))/float(np.sum(df['9-Service/TOTAL'])), 
+            float(np.sum(df['MID '+x+' OFF AND MGRS']))/float(np.sum(df['1.2-Mid OFF AND MGRS/TOTAL']))])
+            
+blk_num = [x*100 for x in BLACK_numbers]
+wht_num = [x*100 for x in WHITE_numbers]
+mal_num = [x*100 for x in MALE_numbers]
+fem_num = [x*100 for x in FEMALE_numbers]
 
-
-print df
 
 
 
