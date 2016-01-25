@@ -13,6 +13,11 @@ import random as rn
 import pandas as pd
 
 
+#pathToBinary = new File("C:\\user\\Programme\\FirefoxPortable\\App\\Firefox\\firefox.exe");
+#ffBinary = new FirefoxBinary(pathToBinary);
+#firefoxProfile = new FirefoxProfile();       
+#driver = new FirefoxDriver(ffBinary,firefoxProfile);
+
 connection = urllib.urlopen("http://www.data.gov/metrics")
 driver = webdriver.Firefox()
 driver.get('http://www.data.gov/metrics')
