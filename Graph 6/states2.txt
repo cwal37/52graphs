@@ -1,0 +1,52 @@
+STATE_NAME	DRAWSEQ	STATE_FIPS	SUB_REGION	STATE_ABBR	Facilities	Population	Pop per Facility
+Alaska	51	02	Pacific	AK	18	"4,849,377"	269409.8333
+Alabama	43	01	East South Central	AL	97	"737,732"	7605.484536
+Arkansas	47	05	West South Central	AR	103	"6,731,484"	65354.21359
+Arizona	37	04	Mountain	AZ	41	"2,994,079"	73026.31707
+California	25	06	Pacific	CA	728	"38,802,500"	53300.13736
+Colorado	32	08	Mountain	CO	119	"5,355,856"	45007.19328
+Connecticut	19	09	New England	CT	58	"3,596,677"	62011.67241
+District of Columbia	28	11	South Atlantic	DC	2	"658,893"	329446.5
+Delaware	29	10	South Atlantic	DE	25	"935,614"	37424.56
+Florida	49	12	South Atlantic	FL	371	"19,893,297"	53620.74663
+Georgia	45	13	South Atlantic	GA	247	"10,097,343"	40879.93117
+Hawaii	1	15	Pacific	HI	45	"1,419,561"	31545.8
+Iowa	14	19	West North Central	IA	175	"1,634,464"	9339.794286
+Idaho	9	16	Mountain	ID	37	"12,880,580"	348123.7838
+Illinois	27	17	East North Central	IL	371	"6,596,855"	17781.28032
+Indiana	22	18	East North Central	IN	88	"3,107,126"	35308.25
+Kansas	34	20	West North Central	KS	69	"2,904,021"	42087.26087
+Kentucky	33	21	East South Central	KY	120	"4,413,457"	36778.80833
+Louisiana	48	22	West South Central	LA	53	"4,649,676"	87729.73585
+Massachusetts	15	25	New England	MA	105	"1,330,089"	12667.51429
+Maryland	31	24	South Atlantic	MD	84	"5,976,407"	71147.70238
+Maine	4	23	New England	ME	24	"6,745,408"	281058.6667
+Michigan	50	26	East North Central	MI	182	"9,909,877"	54449.87363
+Minnesota	11	27	West North Central	MN	187	"5,457,173"	29182.74332
+Missouri	36	29	West North Central	MO	153	"2,984,926"	19509.32026
+Mississippi	44	28	East South Central	MS	64	"6,063,589"	94743.57813
+Montana	3	30	Mountain	MT	24	"1,023,579"	42649.125
+North Carolina	39	37	South Atlantic	NC	224	"1,881,503"	8399.566964
+North Dakota	5	38	West North Central	ND	22	"2,839,099"	129049.9545
+Nebraska	16	31	West North Central	NE	114	"1,326,813"	11638.71053
+New Hampshire	13	33	New England	NH	16	"8,938,175"	558635.9375
+New Jersey	21	34	Middle Atlantic	NJ	277	"2,085,572"	7529.140794
+New Mexico	42	35	Mountain	NM	30	"19,746,227"	658207.5667
+Nevada	23	32	Mountain	NV	32	"9,943,964"	310748.875
+New York	17	36	Middle Atlantic	NY	344	"739,482"	2149.656977
+Ohio	26	39	East North Central	OH	199	"11,594,163"	58262.12563
+Oklahoma	38	40	West South Central	OK	65	"3,878,051"	59662.32308
+Oregon	12	41	Pacific	OR	96	"3,970,239"	41356.65625
+Pennsylvania	18	42	Middle Atlantic	PA	385	"12,787,209"	33213.52987
+Rhode Island	20	44	New England	RI	30	"1,055,173"	35172.43333
+South Carolina	46	45	South Atlantic	SC	58	"4,832,482"	83318.65517
+South Dakota	6	46	West North Central	SD	24	"853,175"	35548.95833
+Tennessee	40	47	East South Central	TN	121	"6,549,352"	54126.87603
+Texas	41	48	West South Central	TX	463	"26,956,958"	58222.37149
+Utah	24	49	Mountain	UT	75	"2,942,902"	39238.69333
+Virginia	35	51	South Atlantic	VA	114	"626,011"	5491.324561
+Vermont	10	50	New England	VT	26	"8,326,289"	320241.8846
+Washington	2	53	Pacific	WA	151	"7,061,530"	46765.09934
+Wisconsin	8	55	East North Central	WI	197	"1,850,326"	9392.517766
+West Virginia	30	54	South Atlantic	WV	23	"5,757,564"	250328.8696
+Wyoming	7	56	Mountain	WY	1	"584,153"	584153
